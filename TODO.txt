@@ -1,0 +1,19 @@
+9 Build a process to populate cashflow for all assets, starting with holdings in PAM
+7 Extend cash flow generation to include illiquid holdings such as privates and mortgages
+3 Extend cash flow generation to include securities not held in a portfolio, ie index prefs, bonds, etc
+9 Build a process to populate asset characteristics in trump, potentially using caegorical data types in Pandas and JSON objects to store the information in postgresql
+MONTHS Pull Pickling Error Logic into stand alone library
+DAYS Add Interest/Dividends from Important Holdings for Bonds and Prefs
+WEEKS Add Important Holdings for Futures
+DAYS Figure out why it's not being backed up properly
+MONTHS Speed Improvements (cache of recent data) (Flag for periodicity of recache) (Read once populate 3x vs read 3x populate 3x) (Remove all_symbol_table) (Turn categories into views)
+WEEKS Write Tests or add functionality to detect when a 'feed' goes down.
+MONTHS Refactor 'securities' to 'feeds'.
+WEEKS Implement way to track where usage occurs, either automatically, or manually.
+WEEKS Confirm capitalization is handled properly everywhere
+MONTHS Change permissions so that the data is inaccessible while it's being cached.
+WEEKS Test Idea, add a _test view for every symbol, which will show the count (to detect dropped or off sets), sum (to check matching), and standard deviation of each feed (to detect stray/bad data points).
+WEEKS Create a TimeStamp of when the feed was last cached.
+WEEKS Move the "Rot" associated with instruction frequency + symbol frequency.  There should be no B-reset, D-reset.  It should all flow through 'noreset', and then remove the freqparse from the _instructions table.
+WEEKS Fix the init/re-init logic/argument to make the usage smarter and faster.  For instance, it shouldn't have to reinit, during add.py
+WEEKS Move Validity() to it's own file.

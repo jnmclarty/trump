@@ -1,1 +1,10 @@
 *.pyc
+*.sql
+logfile
+*.sql
+.spyderproject
+*.p
+*.ppt
+*.db
+*.html
+*.xls

@@ -1,0 +1,2 @@
+DAYS Implement Symbol Frequency Feature
+WEEKS Refactor Securities as Feeds
