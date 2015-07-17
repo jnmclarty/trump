@@ -55,6 +55,7 @@ setup(
                   'trump.templating' : ['settings/*.cfg_sample', 'test/*'], 
                   'trump.aggregation' : ['test/*'],
                   'trump.extensions.source' : ['*'],
+                  'trump.extensions' : ['source/*'],
                   'trump.reporting' : ['test/*'],
                   'trump.tools' : ['test/*']},
   cmdclass = {'install': TrumpInstall},
